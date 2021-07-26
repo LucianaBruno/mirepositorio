@@ -1,0 +1,19 @@
+{
+    "window.zoomLevel": 3,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "explorer.confirmDelete": false,
+    "liveSassCompile.settings.autoprefix": [],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css"
+        }
+    ]
+}
