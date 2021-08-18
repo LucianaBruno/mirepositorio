@@ -111,7 +111,7 @@ body{
     font-weight: bolder;
     }
     h2{
-        color: $rosa;
+        color: $sienna;
         font-weight: 100;
         text-align: center;
         padding-top: 3%;
@@ -192,6 +192,7 @@ body{
     word-spacing: 14px;
     background-color: black;
     margin-bottom: 0%;
+    color: $rosa;
 }
 .centrarTexto{
     text-align: center;
@@ -204,6 +205,9 @@ body{
 .centrar{
     text-align: center;
     background-color: black;
+}
+.eligePlan{
+    color: $rosa;
 }
 
 .fotoBg{

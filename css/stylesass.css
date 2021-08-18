@@ -133,7 +133,7 @@ body h1 {
 }
 
 body h2 {
-  color: burlywood;
+  color: sienna;
   font-weight: 100;
   text-align: center;
   padding-top: 3%;
@@ -207,6 +207,7 @@ body a :visited {
   word-spacing: 14px;
   background-color: black;
   margin-bottom: 0%;
+  color: burlywood;
 }
 
 .centrarTexto {
@@ -221,6 +222,10 @@ body a :visited {
 .centrar {
   text-align: center;
   background-color: black;
+}
+
+.eligePlan {
+  color: burlywood;
 }
 
 .fotoBg {
