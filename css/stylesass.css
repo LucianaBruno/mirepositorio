@@ -37,6 +37,9 @@
   .ficha__imagen {
     margin-left: 9.60%;
   }
+  .redes {
+    width: 50% !important;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -47,6 +50,34 @@
   footer {
     margin-top: 4%;
   }
+  .suscripcion {
+    width: 100% !important;
+  }
+  .tablaCalendario {
+    width: auto !important;
+    border-collapse: collapse !important;
+  }
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+  .rowNo {
+    padding: 0% !important;
+  }
+  .centrarTexto {
+    text-align: justify !important;
+  }
+  .tituloSusc {
+    font-size: larger !important;
+  }
+  .imgCalendario {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .numeroCalendario {
+    font-size: x-small !important;
+    margin: 0px !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -55,6 +86,9 @@
   }
   .fotoResponsive {
     width: 100%;
+  }
+  .redes {
+    width: 200% !important;
   }
 }
 
@@ -80,7 +114,7 @@ body h1 {
 }
 
 body h2 {
-  color: sienna;
+  color: burlywood;
   font-weight: 100;
   text-align: center;
   padding-top: 3%;
@@ -115,14 +149,6 @@ body a :visited {
   color: sienna;
 }
 
-.tituloIndex {
-  padding-top: 3%;
-}
-
-.tituloPrincipal {
-  font-size: 250%;
-}
-
 .barraNav {
   padding-left: 0;
   padding-top: 2%;
@@ -144,14 +170,38 @@ body a :visited {
   color: sienna !important;
 }
 
+.dropdown-menu {
+  background-color: burlywood;
+}
+
+.tituloIndex {
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.tituloPrincipal {
+  font-size: 250%;
+}
+
 .imaginacionIndex {
   letter-spacing: 6px;
   word-spacing: 14px;
+  background-color: black;
+  margin-bottom: 0%;
+}
+
+.centrarTexto {
+  text-align: center;
+  padding: 0% 3%;
+  background-color: black;
+  margin-bottom: 0%;
+  padding-bottom: 2%;
+  color: burlywood;
 }
 
 .centrar {
   text-align: center;
-  background-color: burlywood;
+  background-color: black;
 }
 
 .fotoBg {
@@ -180,17 +230,6 @@ body a :visited {
 }
 
 .tablaCentrar {
-  justify-content: center;
-}
-
-.centrarTexto {
-  text-align: center;
-  padding: 0% 3%;
-}
-
-.sobre {
-  margin-top: 3%;
-  text-align: justify;
   justify-content: center;
 }
 
@@ -268,10 +307,6 @@ body a :visited {
   height: auto;
 }
 
-.dropdown-menu {
-  background-color: burlywood;
-}
-
 .imgCalendario {
   width: 190px;
   height: 190px;
@@ -287,6 +322,12 @@ body a :visited {
   padding-left: 20px;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.sobre {
+  margin-top: 3%;
+  text-align: justify;
+  justify-content: center;
 }
 
 .ficha__texto {
@@ -349,15 +390,15 @@ body a :visited {
   text-align: justify;
 }
 
-.input {
-  width: 80px;
-  height: 20px;
-  transition: all 2s;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-.input .input:hover {
-  width: 200px;
-  font-size: 20px;
+.suscripcion {
+  padding: 3%;
+  align-content: center;
 }
 
 footer {
@@ -378,17 +419,5 @@ footer {
 .redes {
   width: 70%;
   height: 70%;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-.rowNo {
-  padding-bottom: 3%;
-  padding-top: 3%;
-  justify-content: center;
 }
 /*# sourceMappingURL=stylesass.css.map */

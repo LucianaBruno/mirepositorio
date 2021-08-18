@@ -3,6 +3,7 @@
 @import "base/medidas";
 @import "base/animaciones";
 
+// RESPONSIVE
 @media screen and (min-width: 1024px) {
     .barraNav{
         padding-left: 27% !important;
@@ -14,7 +15,10 @@
     .ficha__imagen{
         margin-left: 9.60%;
     }
-    
+    .redes{
+        width: 50% !important;
+    }
+
 }
 @media screen and (max-width: 700px) {
     .column {
@@ -24,6 +28,35 @@
     footer{
         margin-top: 4%;
     }
+    .suscripcion{
+        width: 100% !important;
+    }
+    
+    .tablaCalendario{
+        width: auto !important;
+        border-collapse: collapse !important;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    .rowNo{
+        padding:0% !important;
+    }
+    .centrarTexto{
+        text-align: justify !important;
+    }
+    .tituloSusc{
+        font-size: larger !important;
+    }
+    .imgCalendario{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .numeroCalendario{
+        font-size: x-small !important;
+        margin: 0px !important;
+    }
 }
 @media screen and (max-width: 480px) {
     .foto{
@@ -32,10 +65,13 @@
     .fotoResponsive{
         width: 100%;
     }
+    .redes{
+        width: 200% !important;
+    }
 }
 
 
-
+// BASE DE TODAS LAS PAGINAS
 html{
     font-size: 16px;
 }
@@ -56,12 +92,13 @@ body{
     font-weight: bolder;
     }
     h2{
-        color: $sienna;
+        color: $rosa;
         font-weight: 100;
         text-align: center;
         padding-top: 3%;
         padding-bottom: 2%;
     }
+    
     table {
         width: 100%;
         
@@ -93,14 +130,8 @@ body{
 
 }
 
-.tituloIndex{
-    padding-top: 3%;
-}
 
-.tituloPrincipal{
-    font-size: 250%;
-}
-
+// BARRA NAV
 .barraNav{
     padding-left: 0;
     padding-top: 2%;
@@ -121,14 +152,39 @@ body{
 .menuLink{
     color: $sienna !important
 }
+.dropdown-menu{
+    background-color: $rosa;
+}
+
+
+// PAGINA INDEX
+
+.tituloIndex{
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.tituloPrincipal{
+    font-size: 250%;
+}
 
 .imaginacionIndex{
     letter-spacing: 6px;
     word-spacing: 14px;
+    background-color: black;
+    margin-bottom: 0%;
+}
+.centrarTexto{
+    text-align: center;
+    padding: 0% 3%;
+    background-color: black;
+    margin-bottom: 0%;
+    padding-bottom: 2%;
+    color: $rosa;
 }
 .centrar{
     text-align: center;
-    background-color: $rosa;
+    background-color: black;
 }
 
 .fotoBg{
@@ -158,18 +214,8 @@ body{
 .tablaCentrar{
     justify-content: center;
 }
-.centrarTexto{
-    text-align: center;
-    padding: 0% 3%;
-}
 
-.sobre{
-    margin-top: 3%;
-    text-align: justify;
-    justify-content: center;
-}
-
-
+// PAGINA PORTFOLIO
 .grid{
     display: grid;
     width: 100%;
@@ -236,14 +282,11 @@ body{
     height: auto;
 }
 
-.dropdown-menu{
-    background-color: $rosa;
-}
-
 .imgCalendario{
     width: 190px;
     height: 190px;
 }
+
 .calendarioJunio{
     display: grid;
     width: 100%;
@@ -256,10 +299,21 @@ body{
     padding-bottom: 25px;
 }
 
+
+// PAGINA SOBRE TATSUYA
+.sobre{
+    margin-top: 3%;
+    text-align: justify;
+    justify-content: center;
+}
+
+
+// PAGINA PROCESO
 .ficha__texto{
     text-align: justify;
     padding: 0% 1%;
 }
+
 .video{
     width: 100%;
 }
@@ -277,8 +331,10 @@ body{
 	position: absolute;
 	top: 0;
 	width: 100%;
-	}
+}
 
+
+// PAGINA CONTACTO
 #login {
     width: 96%;
     padding-top: 10%;
@@ -296,6 +352,7 @@ body{
     padding-top: 4%;
     padding-bottom: 4%;
 }
+
 .gridTabla {
     display: grid;
     grid-template-rows: repeat(9 , 40px);
@@ -313,17 +370,23 @@ body{
     font-size: 25px;
     text-align: justify;
 }
-.input{
-    width: 80px;
-    height: 20px;
-    transition: all 2s;
 
-    .input:hover{
-        width: 200px;
-        font-size: 20px;
-    }
+
+
+// PAGINA SUSCRIPCION
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
+.suscripcion{
+    padding: 3%;
+    align-content: center;
+}
+
+
+// FOOTER
 footer{
     color: $sienna;
     font-weight: bolder;
@@ -342,14 +405,4 @@ footer{
 .redes{
     width: 70%;
     height: 70%;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-.rowNo{
-    padding-bottom: 3%;
-    padding-top: 3%;
-    justify-content: center;
 }
