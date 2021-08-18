@@ -26,7 +26,10 @@
         max-width: 100%;
     }
     footer{
-        margin-top: 4%;
+        margin-top: 4% !important;
+    }
+    .footerIndex{
+        margin-top: 0% !important;
     }
     .suscripcion{
         width: 100% !important;
@@ -57,6 +60,10 @@
         font-size: x-small !important;
         margin: 0px !important;
     }
+    .vid{
+        width: 100%;
+        height: auto !important;
+    }
 }
 @media screen and (max-width: 480px) {
     .foto{
@@ -67,6 +74,18 @@
     }
     .redes{
         width: 200% !important;
+    }
+    .msj{
+        padding-bottom: 30% !important;
+        margin-top: 2% !important;
+    }
+    .fotoBg{
+        background-image: url("https://i.pinimg.com/originals/29/44/d9/2944d949796e82c51312325e0e6e7d23.jpg") !important;
+        height: 812px;
+        width: 100% !important;
+    }
+    .tituloIndex{
+        padding-top: 50% !important;
     }
 }
 
@@ -160,7 +179,7 @@ body{
 // PAGINA INDEX
 
 .tituloIndex{
-    padding-top: 8%;
+    padding-top: 6%;
     padding-bottom: 8%;
 }
 
@@ -314,9 +333,11 @@ body{
     padding: 0% 1%;
 }
 
-.video{
+.vid{
     width: 100%;
+    height: 500px;
 }
+
 .video-responsive {
 	height: 0;
 	overflow: hidden;
